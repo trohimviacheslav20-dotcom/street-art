@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Интерактивный квиз 'Угадай стиль стрит-арта' - проверьте свои знания уличного искусства">
+    <title>Квиз - StreetArt Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">StreetArt Guide</a>
+            <nav class="header__nav" aria-label="Основная навигация">
+                <a href="index.html" class="header__nav-link">Галерея</a>
+                <a href="artists.html" class="header__nav-link">Художники</a>
+                <a href="planner.html" class="header__nav-link">Мой план (<span id="planCount">0</span>)</a>
+                <a href="quiz.html" class="header__nav-link header__nav-link--active">Квиз</a>
+                <a href="favorites.html" class="header__nav-link">Избранное (<span id="favCount">0</span>)</a>
+            </nav>
+            <button class="header__burger" aria-label="Открыть меню" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="content__container content__container--full">
+            <section class="quiz-page">
+                <!-- Начальный экран -->
+                <div class="quiz-intro" id="quizIntro">
+                    <h1 class="quiz-intro__title">Угадай стиль стрит-арта</h1>
+                    <p class="quiz-intro__description">
+                        Проверьте свои знания уличного искусства! 10 вопросов о стилях и техниках
+                    </p>
+                    <button class="quiz-intro__btn" id="startQuiz">Начать квиз</button>
+                </div>
+
+                <!-- Экран вопроса -->
+                <div class="quiz-question" id="quizQuestion" style="display: none;">
+                    <div class="quiz-question__progress">
+                        <div class="quiz-question__progress-bar" id="progressBar"></div>
+                        <span class="quiz-question__progress-text" id="progressText">Вопрос 1 из 10</span>
+                    </div>
+                    
+                    <div class="quiz-question__image-container">
+                        <img src="" alt="Арт-объект" class="quiz-question__image" id="questionImage">
+                    </div>
+                    
+                    <h2 class="quiz-question__text" id="questionText">Какой стиль использован в этой работе?</h2>
+                    
+                    <div class="quiz-question__options" id="questionOptions"></div>
+                    
+                    <div class="quiz-question__explanation" id="questionExplanation" style="display: none;">
+                        <p id="explanationText"></p>
+                        <button class="quiz-question__next" id="nextQuestion">Следующий вопрос</button>
+                    </div>
+                </div>
+
+                <!-- Финальный экран -->
+                <div class="quiz-result" id="quizResult" style="display: none;">
+                    <h1 class="quiz-result__title">Квиз завершен!</h1>
+                    <div class="quiz-result__score" id="resultScore"></div>
+                    <div class="quiz-result__rating" id="resultRating"></div>
+                    <div class="quiz-result__actions">
+                        <button class="quiz-result__btn quiz-result__btn--restart" id="restartQuiz">
+                            Пройти еще раз
+                        </button>
+                        <button class="quiz-result__btn quiz-result__btn--gallery" id="viewGallery">
+                            Смотреть галерею
+                        </button>
+                        <button class="quiz-result__btn quiz-result__btn--share" id="shareResult">
+                            Поделиться результатом
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/planner.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

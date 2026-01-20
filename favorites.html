@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Избранные арт-объекты - ваша коллекция любимых произведений уличного искусства">
+    <title>Избранное - StreetArt Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/favorites.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">StreetArt Guide</a>
+            <nav class="header__nav" aria-label="Основная навигация">
+                <a href="index.html" class="header__nav-link">Галерея</a>
+                <a href="artists.html" class="header__nav-link">Художники</a>
+                <a href="planner.html" class="header__nav-link">Мой план (<span id="planCount">0</span>)</a>
+                <a href="quiz.html" class="header__nav-link">Квиз</a>
+                <a href="favorites.html" class="header__nav-link header__nav-link--active">Избранное (<span id="favCount">0</span>)</a>
+            </nav>
+            <button class="header__burger" aria-label="Открыть меню" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="content__container content__container--full">
+            <section class="favorites-page">
+                <h1 class="favorites-page__title">Избранное</h1>
+                
+                <div class="favorites-page__stats">
+                    <p>Избранных объектов: <strong id="favCountText">0</strong></p>
+                </div>
+
+                <div class="favorites-page__empty" id="favoritesEmpty" style="display: none;">
+                    <p>У вас пока нет избранных объектов. Добавляйте работы, которые вам нравятся, нажимая на ♥</p>
+                    <a href="index.html" class="favorites-page__link">Перейти в галерею</a>
+                </div>
+
+                <div class="favorites-page__actions" id="favoritesActions" style="display: none;">
+                    <button class="favorites-page__btn favorites-page__btn--add-all" id="addAllToPlan">
+                        Добавить все в план
+                    </button>
+                    <button class="favorites-page__btn favorites-page__btn--clear" id="clearFavorites">
+                        Очистить избранное
+                    </button>
+                </div>
+
+                <div class="gallery" id="favoritesGallery"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Модальное окно для детального просмотра -->
+    <div class="modal" id="artworkModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal__overlay" id="modalOverlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть" id="modalClose">&times;</button>
+            <div class="modal__body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/planner.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/favorites-page.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

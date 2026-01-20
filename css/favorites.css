@@ -1,0 +1,90 @@
+/* Страница избранного */
+.favorites-page {
+    width: 100%;
+}
+
+.favorites-page__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
+.favorites-page__stats {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.favorites-page__empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--color-gray-medium);
+}
+
+.favorites-page__link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--color-black);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.favorites-page__link:hover {
+    background: var(--color-gray-dark);
+}
+
+.favorites-page__actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.favorites-page__btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.favorites-page__btn--add-all {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.favorites-page__btn--add-all:hover {
+    background: var(--color-gray-dark);
+}
+
+.favorites-page__btn--clear {
+    background: var(--color-pink);
+    color: var(--color-white);
+}
+
+.favorites-page__btn--clear:hover {
+    background: #C2185B;
+}
+
+@media (max-width: 768px) {
+    .favorites-page__title {
+        font-size: 28px;
+    }
+
+    .favorites-page__actions {
+        flex-direction: column;
+    }
+
+    .favorites-page__btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .favorites-page__title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Цифровой путеводитель по уличному искусству города с интерактивной галереей, планировщиком визита и базой художников">
+    <title>StreetArt Guide - Цифровой путеводитель по уличному искусству</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">StreetArt Guide</a>
+            <nav class="header__nav" aria-label="Основная навигация">
+                <a href="index.html" class="header__nav-link header__nav-link--active">Галерея</a>
+                <a href="artists.html" class="header__nav-link">Художники</a>
+                <a href="planner.html" class="header__nav-link">Мой план (<span id="planCount">0</span>)</a>
+                <a href="quiz.html" class="header__nav-link">Квиз</a>
+                <a href="favorites.html" class="header__nav-link">Избранное (<span id="favCount">0</span>)</a>
+            </nav>
+            <button class="header__burger" aria-label="Открыть меню" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner__container">
+            <h1 class="banner__title">Спланируйте свой арт-тур по городу</h1>
+        </div>
+    </section>
+
+    <main class="content">
+        <div class="content__container">
+            <aside class="filters">
+                <h2 class="filters__title">Фильтры</h2>
+                
+                <fieldset class="filters__fieldset">
+                    <legend class="filters__legend">Район</legend>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Центр" data-filter="district">
+                        <span>Центр</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Набережная" data-filter="district">
+                        <span>Набережная</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Старый город" data-filter="district">
+                        <span>Старый город</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Промзона" data-filter="district">
+                        <span>Промзона</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Новый район" data-filter="district">
+                        <span>Новый район</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="filters__fieldset">
+                    <legend class="filters__legend">Тип</legend>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Граффити" data-filter="type">
+                        <span>Граффити</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Мурал" data-filter="type">
+                        <span>Мурал</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Стенсил" data-filter="type">
+                        <span>Стенсил</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Мозаика" data-filter="type">
+                        <span>Мозаика</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="3D-арт" data-filter="type">
+                        <span>3D-арт</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="filters__fieldset">
+                    <legend class="filters__legend">Стиль</legend>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Реализм" data-filter="style">
+                        <span>Реализм</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Абстракция" data-filter="style">
+                        <span>Абстракция</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Портрет" data-filter="style">
+                        <span>Портрет</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Леттеринг" data-filter="style">
+                        <span>Леттеринг</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="checkbox" class="filters__checkbox" value="Характер" data-filter="style">
+                        <span>Характер</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="filters__fieldset">
+                    <legend class="filters__legend">Художник</legend>
+                    <select class="filters__select" id="artistFilter" data-filter="artist">
+                        <option value="">Все художники</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="filters__fieldset">
+                    <legend class="filters__legend">Сортировка</legend>
+                    <label class="filters__label">
+                        <input type="radio" class="filters__radio" name="sort" value="date" checked>
+                        <span>По дате (новые первыми)</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="radio" class="filters__radio" name="sort" value="alphabet">
+                        <span>По алфавиту</span>
+                    </label>
+                    <label class="filters__label">
+                        <input type="radio" class="filters__radio" name="sort" value="random">
+                        <span>Случайный порядок</span>
+                    </label>
+                </fieldset>
+
+                <button class="filters__reset" id="resetFilters">Сбросить фильтры</button>
+            </aside>
+
+            <section class="gallery" id="gallery" role="region" aria-label="Галерея арт-объектов">
+                <div class="gallery__empty" id="galleryEmpty" style="display: none;">
+                    <p>По выбранным фильтрам ничего не найдено</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Модальное окно для детального просмотра арт-объекта -->
+    <div class="modal" id="artworkModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal__overlay" id="modalOverlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть" id="modalClose">&times;</button>
+            <div class="modal__body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Уведомления -->
+    <div class="notification" id="notification"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/planner.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

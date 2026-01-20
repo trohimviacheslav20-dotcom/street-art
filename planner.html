@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Планировщик визита с автоматическим расчетом времени и расстояния">
+    <title>Мой план визита - StreetArt Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/planner.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">StreetArt Guide</a>
+            <nav class="header__nav" aria-label="Основная навигация">
+                <a href="index.html" class="header__nav-link">Галерея</a>
+                <a href="artists.html" class="header__nav-link">Художники</a>
+                <a href="planner.html" class="header__nav-link header__nav-link--active">Мой план (<span id="planCount">0</span>)</a>
+                <a href="quiz.html" class="header__nav-link">Квиз</a>
+                <a href="favorites.html" class="header__nav-link">Избранное (<span id="favCount">0</span>)</a>
+            </nav>
+            <button class="header__burger" aria-label="Открыть меню" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="content__container content__container--full">
+            <section class="planner-page">
+                <h1 class="planner-page__title">Мой план визита</h1>
+                
+                <div class="planner-page__empty" id="planEmpty" style="display: none;">
+                    <p>Ваш план пуст. Добавляйте объекты из галереи!</p>
+                    <a href="index.html" class="planner-page__link">Перейти в галерею</a>
+                </div>
+
+                <div class="planner-page__content" id="planContent">
+                    <div class="planner-page__list" id="planList"></div>
+                    
+                    <div class="planner-page__stats" id="planStats"></div>
+                </div>
+                
+                <div class="planner-page__actions">
+                    <button class="planner-page__btn planner-page__btn--save" id="savePlan">
+                        Сохранить план
+                    </button>
+                    <button class="planner-page__btn planner-page__btn--load" id="loadPlan">
+                        Загрузить готовый план
+                    </button>
+                    <button class="planner-page__btn planner-page__btn--clear" id="clearPlan">
+                        Очистить план
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Модальное окно сохранения плана -->
+    <div class="modal" id="saveModal" role="dialog" aria-hidden="true">
+        <div class="modal__overlay" id="saveModalOverlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">&times;</button>
+            <div class="modal__body">
+                <h2 class="modal__title">Сохранить план</h2>
+                <input type="text" class="modal__input" id="planName" placeholder="Введите название плана">
+                <div class="modal__actions">
+                    <button class="modal__btn modal__btn--add" id="confirmSave">Сохранить</button>
+                    <button class="modal__btn modal__btn--cancel" id="cancelSave">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно загрузки плана -->
+    <div class="modal" id="loadModal" role="dialog" aria-hidden="true">
+        <div class="modal__overlay" id="loadModalOverlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">&times;</button>
+            <div class="modal__body">
+                <h2 class="modal__title">Загрузить готовый план</h2>
+                <div class="modal__plans" id="presetPlansList"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/planner.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/planner-page.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
