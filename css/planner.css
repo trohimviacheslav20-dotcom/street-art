@@ -43,6 +43,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
+    color: var(--color-black);
 }
 
 .plan-item__number {
@@ -68,6 +69,7 @@
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     margin: 0 0 5px 0;
+    color: var(--color-black);
 }
 
 .plan-item__artist {
@@ -133,7 +135,7 @@
 }
 
 .planner-page__stats-item strong {
-    color: var(--color-black);
+    color: var(--color-white);
 }
 
 .planner-page__warning {
@@ -170,12 +172,12 @@
 }
 
 .planner-page__btn--load {
-    background: var(--color-blue);
-    color: var(--color-white);
+    background: var(--color-yellow);
+    color: var(--color-black);
 }
 
 .planner-page__btn--load:hover {
-    background: #00ACC1;
+    background: #FFC04D;
 }
 
 .planner-page__btn--clear {
@@ -213,6 +215,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: var(--transition);
+    color: var(--color-white);
 }
 
 .preset-plan-card:hover {
@@ -233,7 +236,7 @@
 
 .preset-plan-card__description {
     font-size: 14px;
-    color: var(--color-gray-dark);
+    color: var(--color-white);
     margin: 0;
 }
 

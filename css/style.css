@@ -1,13 +1,14 @@
 /* CSS переменные для цветовой схемы */
 :root {
-    --color-black: #212121;
-    --color-white: #FFFFFF;
-    --color-pink: #E91E63;
-    --color-blue: #00BCD4;
-    --color-yellow: #FFC107;
-    --color-gray-light: #F5F5F5;
-    --color-gray-medium: #9E9E9E;
-    --color-gray-dark: #424242;
+    /* Новая неоново-урбанистическая палитра */
+    --color-black: #050712;       /* главный фон, почти чёрный с фиолетовым оттенком */
+    --color-white: #F5F7FF;       /* основной текст/контрастный фон */
+    --color-pink: #FF2D55;        /* неоновый малиновый акцент */
+    --color-blue: #00E5FF;        /* неоновый голубой акцент */
+    --color-yellow: #FFD166;      /* тёплый жёлтый акцент */
+    --color-gray-light: #171A26;  /* светлая поверхность/карточки на тёмном фоне */
+    --color-gray-medium: #4A4F6A; /* вторичный текст/границы */
+    --color-gray-dark: #262A3B;   /* тёмные блоки/ховеры */
     --transition: 0.3s ease;
 }
 
@@ -26,8 +27,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    background: var(--color-white);
-    color: var(--color-black);
+    background: var(--color-black);
+    color: var(--color-white);
     overflow-x: hidden;
 }
 
@@ -112,8 +113,11 @@ body {
 
 /* Banner */
 .banner {
-    background: linear-gradient(135deg, var(--color-pink) 0%, var(--color-blue) 100%);
-    padding: 100px 20px;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(255, 45, 85, 0.35) 0%, transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(0, 229, 255, 0.35) 0%, transparent 55%),
+        linear-gradient(135deg, #050712 0%, #262A3B 55%, #050712 100%);
+    padding: 110px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -122,12 +126,18 @@ body {
 .banner::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></svg>') repeat;
-    opacity: 0.3;
+    inset: 0;
+    background:
+        repeating-linear-gradient(
+            -45deg,
+            rgba(33, 33, 33, 0.2),
+            rgba(33, 33, 33, 0.2) 2px,
+            transparent 2px,
+            transparent 6px
+        );
+    mix-blend-mode: soft-light;
+    opacity: 0.6;
+    pointer-events: none;
 }
 
 .banner__container {
@@ -143,7 +153,11 @@ body {
     font-weight: 700;
     color: var(--color-white);
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    text-shadow:
+        0 0 12px rgba(0, 0, 0, 0.4),
+        0 4px 18px rgba(0, 0, 0, 0.45);
 }
 
 /* Content */
@@ -180,7 +194,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     margin: 0 0 20px 0;
-    color: var(--color-black);
+    color: var(--color-white);
 }
 
 .filters__fieldset {
@@ -192,7 +206,7 @@ body {
 .filters__legend {
     font-weight: 600;
     margin-bottom: 10px;
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 14px;
 }
 
@@ -473,6 +487,7 @@ body {
 .modal__title {
     font-family: 'Oswald', sans-serif;
     font-size: 32px;
+    color: black;
     margin: 0 0 10px 0;
 }
 
@@ -629,7 +644,7 @@ body {
     }
 
     .banner {
-        padding: 60px 20px;
+        padding: 70px 20px;
     }
 
     .banner__title {
