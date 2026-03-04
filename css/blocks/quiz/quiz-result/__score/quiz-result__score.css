@@ -1,0 +1,11 @@
+.quiz-result__score {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+    .quiz-result__score {
+        font-size: 20px;
+    }
+}

@@ -81,12 +81,12 @@ function showArtistProfile(artistId) {
         ` : ''}
         
         <div class="artist-profile__actions">
-            <button class="artist-profile__btn artist-profile__btn--add-all" 
+            <button class="artist-profile__btn artist-profile__btn_add-all" 
                     data-action="add-all" 
                     data-id="${artist.id}">
                 Добавить все работы в план
             </button>
-            <button class="artist-profile__btn artist-profile__btn--view-all" 
+            <button class="artist-profile__btn artist-profile__btn_view-all" 
                     data-action="view-all-works" 
                     data-artist="${artist.id}">
                 Смотреть все работы художника

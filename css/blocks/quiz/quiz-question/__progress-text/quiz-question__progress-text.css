@@ -1,0 +1,4 @@
+.quiz-question__progress-text {
+    font-size: 14px;
+    color: var(--color-gray-medium);
+}

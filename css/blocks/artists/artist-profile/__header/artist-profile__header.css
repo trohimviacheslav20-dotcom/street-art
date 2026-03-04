@@ -1,0 +1,13 @@
+.artist-profile__header {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--color-gray-light);
+}
+
+@media (max-width: 768px) {
+    .artist-profile__header {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,11 @@
+.plan-item__actions {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .plan-item__actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

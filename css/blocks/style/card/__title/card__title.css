@@ -1,0 +1,12 @@
+.card__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    color: var(--color-black);
+}
+
+@media (max-width: 480px) {
+    .card__title {
+        font-size: 16px;
+    }
+}

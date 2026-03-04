@@ -1,0 +1,22 @@
+.planner-page__stats {
+    background: var(--color-gray-light);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.planner-page__stats h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+@media (max-width: 768px) {
+    .planner-page__stats {
+        padding: 15px;
+    }
+
+    .planner-page__stats h3 {
+        font-size: 18px;
+    }
+}

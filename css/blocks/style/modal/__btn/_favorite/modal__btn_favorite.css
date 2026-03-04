@@ -1,0 +1,8 @@
+.modal__btn_favorite {
+    background: var(--color-gray-medium);
+    color: var(--color-white);
+}
+
+.modal__btn_favorite.active {
+    background: var(--color-pink);
+}

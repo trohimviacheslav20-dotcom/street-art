@@ -1,0 +1,5 @@
+.modal__year {
+    color: var(--color-gray-medium);
+    font-size: 14px;
+    margin-bottom: 20px;
+}

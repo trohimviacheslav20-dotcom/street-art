@@ -1,0 +1,14 @@
+.artist-profile__avatar {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: var(--color-gray-light);
+}
+
+@media (max-width: 768px) {
+    .artist-profile__avatar {
+        width: 150px;
+        height: 150px;
+    }
+}

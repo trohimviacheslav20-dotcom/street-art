@@ -1,0 +1,13 @@
+.card__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    background: var(--color-gray-light);
+}
+
+@media (max-width: 480px) {
+    .card__image {
+        height: 200px;
+    }
+}

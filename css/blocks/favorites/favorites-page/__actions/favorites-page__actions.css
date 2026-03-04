@@ -1,0 +1,12 @@
+.favorites-page__actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .favorites-page__actions {
+        flex-direction: column;
+    }
+}

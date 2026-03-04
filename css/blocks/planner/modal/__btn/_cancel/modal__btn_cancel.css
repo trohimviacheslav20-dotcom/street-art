@@ -1,0 +1,4 @@
+.modal__btn_cancel {
+    background: var(--color-gray-medium);
+    color: var(--color-white);
+}

@@ -1,0 +1,12 @@
+.quiz-result__actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .quiz-result__actions {
+        flex-direction: column;
+    }
+}

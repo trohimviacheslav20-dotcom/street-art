@@ -1,0 +1,5 @@
+.artist-profile__real-name {
+    font-size: 18px;
+    color: var(--color-gray-medium);
+    margin: 0 0 15px 0;
+}

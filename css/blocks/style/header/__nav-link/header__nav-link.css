@@ -1,0 +1,12 @@
+.header__nav-link {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: var(--transition);
+    font-size: 14px;
+}
+
+.header__nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

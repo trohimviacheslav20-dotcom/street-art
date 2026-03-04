@@ -1,0 +1,22 @@
+.header__burger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.header__burger span {
+    width: 25px;
+    height: 3px;
+    background: var(--color-white);
+    transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .header__burger {
+        display: flex;
+    }
+}

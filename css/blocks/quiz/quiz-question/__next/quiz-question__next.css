@@ -1,0 +1,15 @@
+.quiz-question__next {
+    width: 100%;
+    padding: 12px 24px;
+    background: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.quiz-question__next:hover {
+    background: var(--color-gray-dark);
+}

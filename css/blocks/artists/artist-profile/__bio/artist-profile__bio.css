@@ -1,0 +1,13 @@
+.artist-profile__bio {
+    margin-bottom: 30px;
+}
+
+.artist-profile__bio h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+}
+
+.artist-profile__bio p {
+    line-height: 1.8;
+}

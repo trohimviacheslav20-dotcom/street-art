@@ -1,0 +1,13 @@
+.card__btn_favorite {
+    background: transparent;
+    border: 1px solid var(--color-gray-medium);
+    color: var(--color-gray-dark);
+    width: 40px;
+    padding: 8px;
+}
+
+.card__btn_favorite.active {
+    background: var(--color-yellow);
+    border-color: #e2960b;
+    color: var(--color-white);
+}

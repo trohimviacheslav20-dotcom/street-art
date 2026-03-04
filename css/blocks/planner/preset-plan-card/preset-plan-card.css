@@ -1,0 +1,15 @@
+.preset-plan-card {
+    padding: 20px;
+    background: var(--color-gray-light);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--color-white);
+}
+
+.preset-plan-card:hover {
+    background: var(--color-gray-medium);
+    color: var(--color-white);
+}
+
+

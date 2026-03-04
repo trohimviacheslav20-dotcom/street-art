@@ -1,0 +1,12 @@
+.quiz-result__rating {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    color: var(--color-pink);
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .quiz-result__rating {
+        font-size: 24px;
+    }
+}

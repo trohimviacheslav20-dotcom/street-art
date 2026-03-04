@@ -1,0 +1,9 @@
+.plan-item__info {
+    flex: 1;
+}
+
+@media (max-width: 480px) {
+    .plan-item__info {
+        font-size: 14px;
+    }
+}

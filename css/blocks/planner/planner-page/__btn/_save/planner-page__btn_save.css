@@ -1,0 +1,8 @@
+.planner-page__btn_save {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+.planner-page__btn_save:hover {
+    background: #00ACC1;
+}

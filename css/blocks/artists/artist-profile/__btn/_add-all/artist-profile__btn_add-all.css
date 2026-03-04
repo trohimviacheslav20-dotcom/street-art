@@ -1,0 +1,8 @@
+.artist-profile__btn_add-all {
+    background: var(--color-pink);
+    color: var(--color-white);
+}
+
+.artist-profile__btn_add-all:hover {
+    background: #C2185B;
+}

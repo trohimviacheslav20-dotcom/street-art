@@ -1,0 +1,12 @@
+.header__logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.header__logo:hover {
+    color: var(--color-pink);
+}

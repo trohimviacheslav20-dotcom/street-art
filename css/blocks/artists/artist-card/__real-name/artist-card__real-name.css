@@ -1,0 +1,5 @@
+.artist-card__real-name {
+    font-size: 14px;
+    color: var(--color-gray-medium);
+    margin: 0 0 8px 0;
+}

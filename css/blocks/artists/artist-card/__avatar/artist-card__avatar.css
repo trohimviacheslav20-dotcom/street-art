@@ -1,0 +1,23 @@
+.artist-card__avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    background: var(--color-gray-light);
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .artist-card__avatar {
+        width: 120px;
+        height: 120px;
+    }
+ }
+
+ @media (max-width: 480px) {
+    .artist-card__avatar {
+        width: 100px;
+        height: 100px;
+    }
+}

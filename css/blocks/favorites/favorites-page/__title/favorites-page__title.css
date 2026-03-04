@@ -1,0 +1,17 @@
+.favorites-page__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
+@media (max-width: 768px) {
+    .favorites-page__title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .favorites-page__title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,14 @@
+.planner-page__link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--color-black);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.planner-page__link:hover {
+    background: var(--color-gray-dark);
+}

@@ -1,0 +1,16 @@
+.filters {
+    background: var(--color-gray-light);
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+@media (max-width: 768px) {
+    .filters {
+        position: static;
+        margin-bottom: 20px;
+    }
+}
+

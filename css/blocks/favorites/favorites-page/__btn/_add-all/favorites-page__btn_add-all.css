@@ -1,0 +1,8 @@
+.favorites-page__btn_add-all {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+.favorites-page__btn_add-all:hover {
+    background: #00ACC1;
+}

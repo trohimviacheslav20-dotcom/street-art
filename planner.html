@@ -18,7 +18,7 @@
             <nav class="header__nav" aria-label="Основная навигация">
                 <a href="index.html" class="header__nav-link">Галерея</a>
                 <a href="artists.html" class="header__nav-link">Художники</a>
-                <a href="planner.html" class="header__nav-link header__nav-link--active">Мой план (<span id="planCount">0</span>)</a>
+                <a href="planner.html" class="header__nav-link header__nav-link_active">Мой план (<span id="planCount">0</span>)</a>
                 <a href="quiz.html" class="header__nav-link">Квиз</a>
                 <a href="favorites.html" class="header__nav-link">Избранное (<span id="favCount">0</span>)</a>
             </nav>
@@ -31,7 +31,7 @@
     </header>
 
     <main class="content">
-        <div class="content__container content__container--full">
+        <div class="content__container content__container_full">
             <section class="planner-page">
                 <h1 class="planner-page__title">Мой план визита</h1>
                 
@@ -47,13 +47,13 @@
                 </div>
                 
                 <div class="planner-page__actions">
-                    <button class="planner-page__btn planner-page__btn--save" id="savePlan">
+                    <button class="planner-page__btn planner-page__btn_save" id="savePlan">
                         Сохранить план
                     </button>
-                    <button class="planner-page__btn planner-page__btn--load" id="loadPlan">
+                    <button class="planner-page__btn planner-page__btn_load" id="loadPlan">
                         Загрузить готовый план
                     </button>
-                    <button class="planner-page__btn planner-page__btn--clear" id="clearPlan">
+                    <button class="planner-page__btn planner-page__btn_clear" id="clearPlan">
                         Очистить план
                     </button>
                 </div>
@@ -70,8 +70,8 @@
                 <h2 class="modal__title">Сохранить план</h2>
                 <input type="text" class="modal__input" id="planName" placeholder="Введите название плана">
                 <div class="modal__actions">
-                    <button class="modal__btn modal__btn--add" id="confirmSave">Сохранить</button>
-                    <button class="modal__btn modal__btn--cancel" id="cancelSave">Отмена</button>
+                    <button class="modal__btn modal__btn_add" id="confirmSave">Сохранить</button>
+                    <button class="modal__btn modal__btn_cancel" id="cancelSave">Отмена</button>
                 </div>
             </div>
         </div>

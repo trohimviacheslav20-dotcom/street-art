@@ -1,0 +1,6 @@
+.artists-page__filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}

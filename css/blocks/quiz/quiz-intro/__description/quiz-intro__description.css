@@ -1,0 +1,12 @@
+.quiz-intro__description {
+    font-size: 18px;
+    color: var(--color-white);
+    margin: 0 0 40px 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .quiz-intro__description {
+        font-size: 16px;
+    }
+}

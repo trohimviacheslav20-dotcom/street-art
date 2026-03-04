@@ -1,0 +1,9 @@
+.artist-work-card__district {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    background: var(--color-gray-light);
+    border-radius: 4px;
+    font-size: 12px;
+}

@@ -1,0 +1,4 @@
+.plan-item__btn_remove {
+    color: var(--color-pink);
+    border-color: var(--color-pink);
+}

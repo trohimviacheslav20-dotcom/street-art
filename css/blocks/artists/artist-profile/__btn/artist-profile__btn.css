@@ -1,0 +1,14 @@
+.artist-profile__btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .artist-profile__btn {
+        width: 100%;
+    }
+}

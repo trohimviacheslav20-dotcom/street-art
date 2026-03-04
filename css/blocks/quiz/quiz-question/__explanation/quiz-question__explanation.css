@@ -1,0 +1,11 @@
+.quiz-question__explanation {
+    background: var(--color-gray-light);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.quiz-question__explanation p {
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+}

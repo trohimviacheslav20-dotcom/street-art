@@ -1,0 +1,5 @@
+.planner-page__empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--color-gray-medium);
+}

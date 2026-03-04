@@ -1,0 +1,11 @@
+.planner-page__actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .planner-page__actions {
+        flex-direction: column;
+    }
+}

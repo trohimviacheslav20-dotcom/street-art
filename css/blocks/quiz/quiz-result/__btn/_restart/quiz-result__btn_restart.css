@@ -1,0 +1,8 @@
+.quiz-result__btn_restart {
+    background: var(--color-pink);
+    color: var(--color-white);
+}
+
+.quiz-result__btn_restart:hover {
+    background: #C2185B;
+}

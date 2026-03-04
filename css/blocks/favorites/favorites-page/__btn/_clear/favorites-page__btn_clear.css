@@ -1,0 +1,8 @@
+.favorites-page__btn_clear {
+    background: var(--color-pink);
+    color: var(--color-white);
+}
+
+.favorites-page__btn_clear:hover {
+    background: #C2185B;
+}

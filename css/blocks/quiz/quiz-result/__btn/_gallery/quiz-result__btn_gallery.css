@@ -1,0 +1,8 @@
+.quiz-result__btn_gallery {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+.quiz-result__btn_gallery:hover {
+    background: #00ACC1;
+}

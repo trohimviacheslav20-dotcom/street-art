@@ -1,0 +1,8 @@
+.planner-page__stats-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.planner-page__stats-item strong {
+    color: var(--color-white);
+}

@@ -1,0 +1,13 @@
+.quiz-result {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+@media (max-width: 768px) {
+    .quiz-result {
+        padding: 40px 15px;
+    }
+}
+
+
+

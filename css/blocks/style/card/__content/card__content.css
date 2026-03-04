@@ -1,0 +1,12 @@
+.card__content {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 480px) {
+    .card__content {
+        padding: 12px;
+    }
+}

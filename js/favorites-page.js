@@ -44,16 +44,16 @@ function renderFavorites() {
                         <span class="card__type">${artwork.type}</span>
                     </div>
                     <div class="card__actions">
-                        <button class="card__btn card__btn--add" 
+                        <button class="card__btn card__btn_add" 
                                 data-action="add-plan" 
                                 data-id="${artwork.id}">
                             ${inPlan ? 'В плане' : 'В план'}
                         </button>
-                        <button class="card__btn card__btn--favorite active" 
+                        <button class="card__btn card__btn_favorite active" 
                                 data-action="favorite" 
                                 data-id="${artwork.id}"
                                 aria-label="Удалить из избранного">
-                            ♥
+                            ★
                         </button>
                     </div>
                 </div>

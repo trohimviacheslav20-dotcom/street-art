@@ -1,0 +1,11 @@
+.card__actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+@media (max-width: 480px) {
+    .card__actions {
+        flex-direction: column;
+    }
+}

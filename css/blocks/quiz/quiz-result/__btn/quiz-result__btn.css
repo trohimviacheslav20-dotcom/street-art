@@ -1,0 +1,14 @@
+.quiz-result__btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .quiz-result__btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,9 @@
+.artist-profile__works {
+    margin-top: 40px;
+}
+
+.artist-profile__works h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}

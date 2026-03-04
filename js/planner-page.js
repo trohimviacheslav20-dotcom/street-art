@@ -53,7 +53,7 @@ function renderPlan() {
                     <button class="plan-item__btn" data-action="down" data-index="${index}">
                         Вниз
                     </button>
-                    <button class="plan-item__btn plan-item__btn--remove" data-action="remove" data-index="${index}">
+                    <button class="plan-item__btn plan-item__btn_remove" data-action="remove" data-index="${index}">
                         Удалить
                     </button>
                 </div>

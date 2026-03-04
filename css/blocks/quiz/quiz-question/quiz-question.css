@@ -1,0 +1,11 @@
+.quiz-question {
+    padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+    .quiz-question {
+        padding: 20px 15px;
+    }
+}
+
+

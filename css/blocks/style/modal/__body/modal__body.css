@@ -1,0 +1,9 @@
+.modal__body {
+    padding: 40px;
+}
+
+@media (max-width: 768px) {
+    .modal__body {
+        padding: 20px;
+    }
+}

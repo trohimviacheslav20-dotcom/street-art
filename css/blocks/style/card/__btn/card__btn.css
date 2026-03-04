@@ -1,0 +1,17 @@
+.card__btn {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: var(--transition);
+}
+
+@media (max-width: 480px) {
+    .card__btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}

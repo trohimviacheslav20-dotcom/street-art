@@ -1,0 +1,8 @@
+.quiz-result__btn_share {
+    background: var(--color-yellow);
+    color: var(--color-black);
+}
+
+.quiz-result__btn_share:hover {
+    background: #FFB300;
+}

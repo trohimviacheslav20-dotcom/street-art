@@ -1,0 +1,14 @@
+.favorites-page__btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .favorites-page__btn {
+        width: 100%;
+    }
+}

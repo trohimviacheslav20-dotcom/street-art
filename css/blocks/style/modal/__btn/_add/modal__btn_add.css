@@ -1,0 +1,8 @@
+.modal__btn_add {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.modal__btn_add:hover {
+    background: var(--color-gray-dark);
+}

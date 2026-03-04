@@ -1,0 +1,8 @@
+.planner-page__btn_clear {
+    background: var(--color-pink);
+    color: var(--color-white);
+}
+
+.planner-page__btn_clear:hover {
+    background: #C2185B;
+}

@@ -1,0 +1,13 @@
+.quiz-question__options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .quiz-question__options {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

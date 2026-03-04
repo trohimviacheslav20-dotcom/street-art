@@ -1,0 +1,8 @@
+.artist-profile__btn_view-all {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+.artist-profile__btn_view-all:hover {
+    background: #00ACC1;
+}

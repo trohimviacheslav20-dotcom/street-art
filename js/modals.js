@@ -1,11 +1,11 @@
 // Модальные окна
 function getDistrictClass(district) {
     const classes = {
-        'Центр': 'card__district--center',
-        'Набережная': 'card__district--naberezhna',
-        'Старый город': 'card__district--old-city',
-        'Промзона': 'card__district--promzone',
-        'Новый район': 'card__district--new-district'
+        'Центр': 'card__district_center',
+        'Набережная': 'card__district_naberezhna',
+        'Старый город': 'card__district_old-city',
+        'Промзона': 'card__district_promzone',
+        'Новый район': 'card__district_new-district'
     };
     return classes[district] || '';
 }
@@ -68,20 +68,20 @@ function openArtworkModal(artworkId) {
             ${artwork.description}
         </div>
         <div class="modal__actions">
-            <button class="modal__btn modal__btn--add" data-action="add-plan" data-id="${artwork.id}">
+            <button class="modal__btn modal__btn_add" data-action="add-plan" data-id="${artwork.id}">
                 ${inPlan ? 'Убрать из плана' : 'Добавить в план'}
             </button>
-            <button class="modal__btn modal__btn--favorite ${isFav ? 'active' : ''}" 
+            <button class="modal__btn modal__btn_favorite ${isFav ? 'active' : ''}" 
                     data-action="favorite" 
                     data-id="${artwork.id}">
                 ${isFav ? '★ В избранном' : '☆ В избранное'}
             </button>
-            <button class="modal__btn modal__btn--artist" 
+            <button class="modal__btn modal__btn_artist" 
                     data-action="view-artist-works" 
                     data-artist="${artwork.artist}">
                 Все работы художника
             </button>
-            <button class="modal__btn modal__btn--share" data-action="share" data-id="${artwork.id}">
+            <button class="modal__btn modal__btn_share" data-action="share" data-id="${artwork.id}">
                 Поделиться
             </button>
         </div>

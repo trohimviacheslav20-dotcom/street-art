@@ -1,0 +1,30 @@
+.banner__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    text-shadow:
+        0 0 12px rgba(0, 0, 0, 0.4),
+        0 4px 18px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 1024px) {
+    .banner__title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner__title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner__title {
+        font-size: 24px;
+    }
+}

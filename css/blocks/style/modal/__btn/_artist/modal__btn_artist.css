@@ -1,0 +1,4 @@
+.modal__btn_artist {
+    background: var(--color-blue);
+    color: var(--color-white);
+}

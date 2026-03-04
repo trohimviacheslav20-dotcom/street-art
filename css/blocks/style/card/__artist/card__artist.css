@@ -1,0 +1,11 @@
+.card__artist {
+    font-size: 14px;
+    color: var(--color-gray-dark);
+    margin: 0 0 12px 0;
+}
+
+@media (max-width: 480px) {
+    .card__artist {
+        font-size: 13px;
+    }
+}
