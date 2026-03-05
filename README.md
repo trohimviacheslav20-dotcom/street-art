@@ -54,6 +54,9 @@
 - **Доступность**: ARIA-атрибуты, семантическая разметка, alt-тексты
 
 
+**Ссылка на GitHub Pages:** https://trohimviacheslav20-dotcom.github.io/street-art/
+
+
 ---
 
 Трохим Вячеслав, 2025
