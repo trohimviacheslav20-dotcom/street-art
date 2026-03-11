@@ -68,4 +68,6 @@
 @import url('./blocks/style/page/page.css');
 
 @import url('./blocks/style/variables/variables.css');
-
+ footer{
+   text-align: center;
+ }
