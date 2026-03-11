@@ -69,5 +69,5 @@
 
 @import url('./blocks/style/variables/variables.css');
  footer{
-   content-align: center;
+   text-align: center;
  }
